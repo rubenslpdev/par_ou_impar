@@ -1,0 +1,55 @@
+body {
+  display: flex; /* o flexbox é usado aqui para centralizar o container */
+  flex-direction: column; /* Empilha os elementos verticalmente */
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+  position: relative;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+input[type='number'] {
+  -moz-appearance: textfield; /* Elimina as setas de aumento e diminuição do numeral no Firefox */
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button {
+  width: 100%;
+  background-color: #3d5d9c;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #344e81;
+}
+
+#result {
+  text-align: center;
+  color: #333;
+  margin-top: 46px;
+  position: absolute;
+  top: calc(50% + 120px); /* calcula a posição para aparecer abaixo do container sem alterar a posição dele */
+}
